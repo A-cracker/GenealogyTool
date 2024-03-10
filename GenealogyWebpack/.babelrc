@@ -1,0 +1,54 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": 3,
+          "browsers": [
+            "ie >= 8",
+            "chrome >= 62"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": false,
+        "helpers": false,
+        "regenerator": false,
+        "useESModules": false
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "muse-ui",
+        "libraryDirectory": "es5",
+        "camel2DashComponentName": false
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "vant",
+        "libraryDirectory": "es",
+        "style": true
+      },
+      "vant"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "ant-design-vue",
+        "libraryDirectory": "es",
+        "style": true
+      },
+      "ant-design-vue"
+    ]
+  ],
+  "comments": false
+}

@@ -1,0 +1,95 @@
+/* 重写滚动条样式 */
+/* 动画样式 */
+@keyframes backOpacity{
+   0%   { opacity: 1 }
+   25%  { opacity: .5 }
+   50%  { opacity: 1 }
+   75%  { opacity: .5 }
+   100% { opacity: 1 }
+}
+.animation_opactiy{
+    animation: backOpacity 2s ease-in-out infinite;
+}
+/* 带遮罩的全局图层 */
+.qrcode-fixed-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+    .qrcode {
+        min-width: 170px;
+        min-height: 170px;
+        position: relative;
+        border: 1px solid white;
+        background: white;
+        padding: 5px;
+        &::before {
+            margin-top: 40%;
+            text-align: center;
+            content: '正在生成...';
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        &::after {
+            text-align: center;
+            content: '打开微信扫一扫';
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -24px;
+        }
+        .closebtn {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          background: hsla(0,0%,100%,.4);
+          cursor: pointer;
+          left: 46%;
+          bottom: -80px;
+            &::before {
+                color: white;
+                content: '×';
+              font-size: 40px;
+
+            }
+            &:hover {
+                background:rgba(255, 255, 255, 0.6);
+            }
+        }
+
+      .qr-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: white;
+        padding: 5px 10px;
+        color: #3e9356;
+        transform: translate(-50%,-50%);
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 7px;
+        max-width: 120px;
+        overflow: hidden;
+        max-height: 120px;
+      }
+    }
+}

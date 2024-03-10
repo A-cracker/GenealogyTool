@@ -1,0 +1,117 @@
+.linage,.marriage {
+    fill: none;
+	stroke: #b7b7b7;
+	stroke-width: 1px;
+}
+.marriage {
+    fill: none;
+
+}
+
+.node{
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: all 0.3s;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-color: #ffffff;
+	background-position-x: 5px;
+	background-size: 18px;
+	border: 1px solid #ccc;
+	display: flex;
+	align-items: center;
+	height:100%;
+	width:100%;
+}
+
+
+.nodeText {
+	cursor: pointer;
+	user-select: none;
+	margin: 0;
+	padding: 5px;
+	flex: 1;
+	text-align: center;
+	font-size: 1rem;
+	text-overflow: ellipsis;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: bold;
+
+}
+
+.vertical-node-text{
+	writing-mode: vertical-rl;
+	height: 90px;
+	width: auto;
+	text-align: left;
+	padding: 5px 0 0 0;
+	/*overflow: visible;*/
+	/*margin-bottom: 30px;*/
+}
+
+.vertical-node-not-text{
+	height: 70px;
+}
+
+.vertical-node{
+	flex-direction: column;
+	width: fit-content;
+	width: -moz-fit-content;
+	padding: 5px;
+}
+
+.node img{
+	padding-left: 5px;
+	height: 1rem;
+}
+
+.vertical-node img{
+	padding-left: 0;
+	padding-top: 5px;
+}
+
+.man {
+	border: 1px solid #86d6f3;
+}
+
+.man img{
+	content: url("../images/male.png");
+}
+
+.woman {
+	border: 1px solid #fbadd1;
+}
+
+.woman img{
+	content: url("../images/female.png")
+}
+
+
+
+.emphasis{
+		font-style: italic;
+}
+
+
+.not-info{
+	 filter: grayscale(1);
+	width: 70% !important;
+ }
+
+.not-info p{
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+	color: #8c8c8c;
+	font-weight: normal;
+}
+
+.death{
+	border: 1px solid grey;
+}

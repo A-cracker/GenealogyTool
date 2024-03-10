@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <link rel="shortcut icon" href="https://rs.wetoband.com/wtbwebRs/images/favicon.ico">
+
+    <script src="resource/js/jquery.min.js"></script>
+<!--    <script src="resource/js/app.js"></script>-->
+<!--    <script src="resource/js/popper.min.js"></script>-->
+<!--    <script src="resource/js/bootstrap.min.js"></script>-->
+<!--    <script src="resource/js/bootstrap-select.js"></script>-->
+<!--    <script src="resource/js/jquery-ui.js"></script>-->
+    <script src="resource/js/base64.js"></script>
+
+
+<!--    <script src="resource/js/fileinput.min.js"></script>-->
+<!--    <script src="resource/js/fileinput.zh.min.js"></script>-->
+<!--    <script src="resource/js/bootstrap-datetimepicker.min.js"></script>-->
+<!--    <script src="resource/js/bootstrap-datetimepicker.zh-CN.js"></script>-->
+<!--    <script src="resource/js/bootstrap-table.min.js"></script>-->
+<!--    <script src="resource/js/bootstrap-table-zh-CN.min.js"></script>-->
+    <script src="resource/js/lodash.min.js"></script>
+    <script src="resource/js/d3.min.js"></script>
+    <script src="resource/js/dTreeNew.js"></script>
+    <script src="resource/js/dPath.js"></script>
+    <title>亲网</title>
+    <style>
+        html,body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .routerLoading {
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50vw;
+            height: 3px;
+            background-color: grey;
+            border-radius: 2px;
+            animation: myfirst 1.55s ease-in-out 0s infinite;
+        }
+
+        @keyframes myfirst {
+            0% {
+                left: -50vw;
+            }
+            100% {
+                left: 100vw;
+            }
+        }
+
+        @-moz-keyframes myfirst {
+            0% {
+                left: -50vw;
+            }
+            100% {
+                left: 100vw;
+            }
+        }
+
+        @-webkit-keyframes myfirst {
+            0% {
+                left: -50vw;
+            }
+            100% {
+                left: 100vw;
+            }
+        }
+
+        @-o-keyframes myfirst {
+            0% {
+                left: -50vw;
+            }
+            100% {
+                left: 100vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <div class="routerLoading"></div>
+</body>
+<!--<script src="resource/js/genealogy.js"></script>-->
+</html>
